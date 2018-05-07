@@ -68,11 +68,6 @@ body {
 	color: #FFFFFF;
 }
 
-#codeImg-about {
-	width: 45%;
-    height: auto;
-}
-
 div.about-subtext {
 	padding-left: 10%;
 	text-align: left;
@@ -106,6 +101,11 @@ div.grid3 {
 
 img.round {
 	border-radius: 50%;
+}
+
+img.gridImgSize {
+	width: 45%;
+    height: auto;
 }
 
 div.darkened {

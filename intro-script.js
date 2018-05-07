@@ -1,10 +1,13 @@
 //Constants
 var blinkTimeMs = 500;
-var typeSpeed = 100; //Default is 100
+var typeSpeed = 1; //Default is 100
 var introFadeSpeed = 400;
 var contentFadeSpeed = 2500;
 
 $(document).ready(function(){
+	
+	$("#intro").fadeTo(0, 1);
+	$("#content").fadeTo(0, 0);
 	
 	setInterval ('blink()', blinkTimeMs);
 	
