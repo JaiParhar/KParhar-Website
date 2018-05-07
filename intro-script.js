@@ -2,10 +2,9 @@
 var blinkTimeMs = 500;
 var typeSpeed = 100; //Default is 100
 var introFadeSpeed = 400;
-var contentFadeSpeed = 2500;
+var contentFadeSpeed = 2500; //Default is 2500
 
 $(document).ready(function(){
-	
 	$("#intro").fadeTo(0, 1);
 	$("#content").fadeTo(0, 0);
 	
@@ -14,6 +13,8 @@ $(document).ready(function(){
 	typeEffect("#introTypeEffect", "KParhar.exe<br>Starting program...<br>", typeSpeed, function() {
 		$("#intro").delay(100).fadeOut(introFadeSpeed);
 		$("#content").fadeTo(contentFadeSpeed, 1);
+		
+		$('html, body').animate({ scrollTop: 0 }, 0);
 		
 		var vpH = $(window).height() - $("#navbar").height();
 		$("#about").css("height", vpH + "px");

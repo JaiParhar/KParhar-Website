@@ -2,7 +2,6 @@ body {
 	background-color: #FFFFFF;
 	color: #000000;
 	font-family: 'Share Tech', sans-serif;
-	/*font-family: Helvetica Neue,Helvetica,Arial,sans-serif;*/ 
 }
 
 #intro {
@@ -10,6 +9,7 @@ body {
 	font-family: 'VT323', monospace;
 	color: #FFFFFF;
 	background-color: #000000;
+	position: fixed;
 }
 
 #navbar {
