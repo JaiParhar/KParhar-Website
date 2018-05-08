@@ -155,8 +155,15 @@
 			<div class="sectionHeader">Contact Me</div>
 			<div class="sectionSubtitle">Want to hire me? Contact me below.</div>
 			<div id="contactInput">
-				<form id="contactForm" method="GET">
-					<textarea id="contact-text" name="contact-text"></textarea>
+				<form id="contactForm" action="http://localhost:5000/email" method="POST">
+					<div class="contact-label">Name</div>
+					<input type="text" id="contact-name" class="contact-input" name="contact-name"></input></br>
+					<div class="contact-label">Email Address</div>
+					<input type="text" id="contact-email" class="contact-input" name="contact-email"></input></br>
+					<div class="contact-label">Subject</div>
+					<input type="text" id="contact-subject" class="contact-input" name="contact-subject"></input></br>
+					<div class="contact-label">Message</div>
+					<textarea id="contact-msg" class="contact-input" name="contact-msg"></textarea></br>
 					<input type="submit" value="Send Message"></input>
 				</form>
 			</div>

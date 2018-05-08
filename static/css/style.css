@@ -69,13 +69,20 @@ body {
 }
 
 #contactForm {
-	vertical-align: middle;
-	text-align: center;
+	margin-left: 10vw;
 }
 
-#contact-text {
-	width: 80vw;
+#contact-msg {
 	height: 45vh;
+}
+
+div.contact-label {
+	font-size: 1.1em;
+}
+
+.contact-input {
+	margin-bottom: 2vh;
+	width: 80vw;
 }
 
 div.about-subtext {
