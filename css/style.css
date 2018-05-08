@@ -68,6 +68,16 @@ body {
 	color: #FFFFFF;
 }
 
+#contactForm {
+	vertical-align: middle;
+	text-align: center;
+}
+
+#contact-text {
+	width: 80vw;
+	height: 45vh;
+}
+
 div.about-subtext {
 	padding-left: 10%;
 	text-align: left;
