@@ -1,5 +1,13 @@
 $(document).ready(function(){
 	$("#contact-submit").on('click', function(event) {
+		
+		$("#contact-submit").addClass("shrink");
+		$("#contact-submit").one("webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend",
+			function(event) {
+				
+			}
+		);
+		
 		if($("#contact-name").val() != "" && $("#contact-email").val() != "" && $("#contact-subject").val() != "" && $("#contact-msg").val() != "") {
 			$("#msg-status").text("Sending Message...").show();
 			$.ajax({

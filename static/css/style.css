@@ -83,12 +83,17 @@ body {
 
 /*Button Code Start*/
 
+@keyframes shrink {
+    0% { font-size: 4em; }
+    100% { font-size: 0em; }
+}
+
 #submitContainer {
-	font-size:4em;
 	text-align: center;
 }
 
 #contact-submit {
+	font-size:4em;
 	cursor: pointer;
 	color: black;
 	height: 10vh;
@@ -96,6 +101,21 @@ body {
 
 #contact-submit:hover {
 	color: #CCCCCC;
+}
+
+.shrink {
+	animation-name: shrink;
+    animation-duration: 0.5s;
+}
+
+.grow {
+	animation-name: shrink;
+    animation-duration: 0.5s;
+	animation-direction: reverse;
+}
+
+#contact-loading {
+	font-size: 4em;
 }
 
 /*Button Code End*/
