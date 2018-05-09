@@ -74,12 +74,32 @@ body {
 }
 
 #contact-msg {
-	height: 45vh;
+	height: 34vh;
 }
 
 #msg-status {
 	float: right;
 }
+
+/*Button Code Start*/
+
+#submitContainer {
+	font-size:4em;
+	text-align: center;
+}
+
+#contact-submit {
+	cursor: pointer;
+	color: black;
+	height: 10vh;
+}
+
+#contact-submit:hover {
+	color: #CCCCCC;
+}
+
+/*Button Code End*/
+
 
 div.contact-label {
 	font-size: 1.1em;

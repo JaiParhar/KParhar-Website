@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	$("#contactForm").on('submit', function(event) {
+	$("#contact-submit").on('click', function(event) {
 		if($("#contact-name").val() != "" && $("#contact-email").val() != "" && $("#contact-subject").val() != "" && $("#contact-msg").val() != "") {
 			$("#msg-status").text("Sending Message...").show();
 			$.ajax({
@@ -21,3 +21,4 @@ $(document).ready(function(){
 		event.preventDefault();
 	});
 });
+
