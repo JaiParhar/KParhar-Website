@@ -12,8 +12,6 @@ $(document).ready(function(){
 	$("#subtextButton").click(function(){ scrollTo("#about", scrollSpeed); });
 });
 
-//TODO
-//Make the scroll ease in
 function scrollTo(divID, speed) {
 	$('html, body').animate({
         scrollTop: $(divID).offset().top - $("#navbar").height()

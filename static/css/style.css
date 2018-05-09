@@ -76,6 +76,10 @@ body {
 	height: 45vh;
 }
 
+#msg-status {
+	margin-top: 1vh;
+}
+
 div.contact-label {
 	font-size: 1.1em;
 }

@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect
+from flask import Flask, render_template, request, redirect, jsonify
 from flask_mail import Mail, Message
 
 app = Flask(__name__)
@@ -20,10 +20,10 @@ def index():
 
 @app.route('/email', methods = ['POST'])
 def email():
-	senderName = request.form['contact-name']
-	senderEmail = request.form['contact-email']
-	senderSubject = request.form['contact-subject']
-	senderMsg = request.form['contact-msg']
+	senderName = request.form['cName']
+	senderEmail = request.form['cEmail']
+	senderSubject = request.form['cSubject']
+	senderMsg = request.form['cMsg']
 	
 	msg = Message(senderSubject, sender = 'coderk2001@gmail.com', recipients = ['coderk2001@gmail.com'])
 	msg.body = ""
@@ -31,7 +31,7 @@ def email():
 	msg.body += "Sender Email:" + senderEmail + "\n"
 	msg.body += "\nSender Message:\n" + senderMsg
 	mail.send(msg)
-	return redirect("http://localhost:5000")
+	return jsonify({"Status" : "Sent!"})
 	
 if __name__ == '__main__':
     app.run(debug=True)
