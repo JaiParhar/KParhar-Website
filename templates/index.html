@@ -11,6 +11,7 @@
 	
 	<link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet"> 
 	<link href="https://fonts.googleapis.com/css?family=Share+Tech" rel="stylesheet"> 
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/reset.css') }}">
 	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
 
@@ -156,6 +157,7 @@
 			<div class="sectionSubtitle">Want to hire me? Contact me below.</div>
 			<div id="contactInput">
 				<form id="contactForm" action="http://localhost:5000/email" method="POST">
+					<div id="msg-status"></div>
 					<div class="contact-label">Name</div>
 					<input type="text" id="contact-name" class="contact-input" name="contact-name"></input></br>
 					<div class="contact-label">Email Address</div>
@@ -164,8 +166,7 @@
 					<input type="text" id="contact-subject" class="contact-input" name="contact-subject"></input></br>
 					<div class="contact-label">Message</div>
 					<textarea id="contact-msg" class="contact-input" name="contact-msg"></textarea></br>
-					<input type="submit" value="Send Message"></input>
-					<div id="msg-status"></div>
+					<input id="contact-submit" type="submit" class="full-width" value="Send Message"></input>
 				</form>
 			</div>
 			<div id="contactInfo" class="grid3"></div>

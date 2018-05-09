@@ -69,7 +69,8 @@ body {
 }
 
 #contactForm {
-	margin-left: 10vw;
+	margin: 0 auto;
+	width: 80vw;
 }
 
 #contact-msg {
@@ -77,7 +78,7 @@ body {
 }
 
 #msg-status {
-	margin-top: 1vh;
+	float: right;
 }
 
 div.contact-label {
@@ -86,7 +87,7 @@ div.contact-label {
 
 .contact-input {
 	margin-bottom: 2vh;
-	width: 80vw;
+	width: 99.5%;
 }
 
 div.about-subtext {
