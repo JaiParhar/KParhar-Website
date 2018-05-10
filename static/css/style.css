@@ -18,7 +18,7 @@ body {
 }
 
 #navbarLinks {
-	font-size: 2em;
+	font-size: 2vw; /*May want to change to em*/
 	color: #FFFFFF;
 	width: 100%;
 	text-align: center;
@@ -29,7 +29,7 @@ body {
 	position: absolute;
 	text-align: left;
 	color: #FFFFFF;
-	font-size: 3.5em;
+	font-size: 3.5vw; /*May want to change to em*/
 }
 
 #landingScreen {
