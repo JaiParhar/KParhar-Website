@@ -159,7 +159,6 @@
 			<div class="sectionSubtitle">Want to hire me? Contact me below.</div>
 			<div id="contactInput">
 				<form id="contactForm" action="http://localhost:5000/email" method="POST">
-					<div id="msg-status"></div>
 					<div class="contact-label">Name</div>
 					<input type="text" id="contact-name" class="contact-input" name="contact-name"></input></br>
 					<div class="contact-label">Email Address</div>
@@ -172,7 +171,7 @@
 					<!--Button Code FIX THIS-->
 					<div id="submitContainer">
 						<i id="contact-submit" class="fas fa-envelope"></i></br>
-						<i id="contact-loading" class="fas fa-cog fa-spin"></i>
+						<div id="msg-status"></div>
 					</div>
 					
 				</form>
