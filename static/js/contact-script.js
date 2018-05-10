@@ -14,11 +14,19 @@ $(document).ready(function(){
 				url : "/email"
 			})
 			.done(function(data) {
+				$("#contact-name").val("");
+				$("#contact-email").val("");
+				$("#contact-subject").val("");
+				$("#contact-msg").val("");
+				
 				endSendAnimation();
 				$("#msg-status").text(data.Status).show();
 			});
 		} else {
-			checkBlankForm();
+			checkBlankForm("contact-name");
+			checkBlankForm("contact-email");
+			checkBlankForm("contact-subject");
+			checkBlankForm("contact-msg");
 			
 			startShakeAnimation();
 			setTimeout(endShakeAnimation, 500);

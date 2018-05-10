@@ -1,6 +1,6 @@
 //Constants
 var blinkTimeMs = 500;
-var typeSpeed = 1; //Default is 50
+var typeSpeed = 50; //Default is 50
 var introFadeSpeed = 400;
 var contentFadeSpeed = 2500; //Default is 2500
 
